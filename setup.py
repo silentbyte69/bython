@@ -4,19 +4,19 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="brainpy",
+    name="bf2py",
     version="0.1.0",
     author="Dmitry Seksov",
     author_email="dmitrypidaras89@gmail.com",
     description="A library that converts Brainfuck code to Python and executes it",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/silentbyte69/brainpy",
+    url="https://github.com/silentbyte69/bf2py",
     packages=find_packages(),
     python_requires=">=3.7",
     entry_points={
         "console_scripts": [
-            "brainpy=brainpy.cli:main",
+            "bf2py=bf2py.cli:main",
         ],
     },
     classifiers=[
